@@ -1,0 +1,210 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+}
+
+body {
+	padding-top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	margin: 0;
+}
+
+div.content {
+	font-family: sans-serif;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+ul.topnav {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dashed #B4CDCD;
+}
+
+ul.topnav li, ul.topnav li.menuitem {
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline-block;
+}
+
+li.menuitem a {
+	color: #668B8B;
+	font-size: 18px;
+}
+
+li.title p {
+	color: #333;
+	font-size: 18px;
+}
+
+li.title a {
+	color: #333;
+}
+
+/* Main content */
+
+div.text {
+	font-family: sans-serif;
+	background-color: #fff;
+	padding: 0px 25% 0px 25%;
+	width: 100%;
+	margin: 100px 0;
+}
+
+p.pubtitle {
+	color: #668B8B;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 25px 0 0 0;
+}
+
+p.pubtitle a {
+	color: #668B8B;
+}
+
+p.blogtitle {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+
+p.blogdesc {
+	font-size: .9em;
+	margin: 0 0 10px 0;
+}
+
+p.pubauth {
+	font-size: .9em;
+	margin: 2px 0 2px 0;
+}
+
+p.pubsource {
+	font-size: .9em;
+	margin: 2px 0 2px 0;
+}
+
+p.pubdate {
+	font-size: .9em;
+	font-style: italic;
+	margin: 2px 0 2px 0;
+}
+
+p.desc {
+	font-size: .9em;
+	line-height: 130%;
+	margin: 10px 0 0 0;
+}
+
+p.lede {
+	background-color: #000;
+	color: #fff;
+	font-size: .9em;
+	line-height: 150%;
+	padding: 10px 20px 10px 20px;
+}
+
+p.lede strong {
+	color: #668B8B;
+}
+
+p.readmore {
+	font-size: .9em;
+	font-style: italic;
+	color: #668B8B;
+	margin: 3px 0;
+}
+
+p.readmore a {
+	color: #668B8B;
+}
+
+.readmore img {
+	height: 14px;
+}
+
+div.video {
+	margin: 20px 0 20px 0;
+}
+
+/* surrounding stuff */
+
+div.text.links p {
+	text-align: center;
+}
+
+div.text.fronto p {
+	text-align: center;
+}
+
+img.icon {
+	height: 75px;
+}
+
+img.frontimg {
+	background-color:#fff;
+	width:200px;
+	height:200px;
+	border:4px solid #fff;
+	-webkit-box-shadow:0 0 2px 0 #808080;
+	box-shadow:0 0 2px 0 #808080;
+	border-radius:600px;
+	-webkit-border-radius:600px;
+}
+
+/* iPad
+------------------------------------------------ */
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+
+	li.title {
+		display: block;
+	}
+
+	div.text {
+		padding: 0px 10% 0px 10%;
+	}
+
+}
+
+/* iPhone [portrait + landscape] 
+--------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+	div.content {
+		font-family: sans-serif;
+		font-weight: bold;
+		position: relative;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		background-color: #fff;
+	}
+
+	ul.topnav li.title {
+		display: block;
+	}
+
+	div.text {
+		padding: 0px 10px 0px 10px;
+		margin: 0;
+	}
+
+	p.lede {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+}
