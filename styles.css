@@ -42,6 +42,18 @@ li.menuitem a {
 	font-size: 18px;
 }
 
+ul.topnav li.title p a::after {
+	content: ":";
+	margin-right: 12px;
+}
+
+ul.topnav li.menuitem p a::after {
+	content: "/";
+	color: #000000;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
 li.title p {
 	color: #333;
 	font-size: 18px;
@@ -61,14 +73,14 @@ div.text {
 	margin: 100px 0;
 }
 
-p.pubtitle {
+.pubtitle {
 	color: #668B8B;
 	font-size: 1.2em;
 	font-weight: bold;
 	margin: 25px 0 0 0;
 }
 
-p.pubtitle a {
+.pubtitle a {
 	color: #668B8B;
 }
 
@@ -176,10 +188,10 @@ img.frontimg {
 
 }
 
-/* iPhone [portrait + landscape] 
+/* Small screens
 --------------------------------------------------------------------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 	div.content {
 		font-family: sans-serif;
@@ -193,8 +205,19 @@ img.frontimg {
 		background-color: #fff;
 	}
 
-	ul.topnav li.title {
+	ul.topnav li.title, ul.topnav li.menuitem {
 		display: block;
+	}
+
+	ul.topnav li.menuitem p a:after {
+		content: normal;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	ul.topnav li.title p a::after {
+		content: normal;
+		margin-right: 0px;
 	}
 
 	div.text {
